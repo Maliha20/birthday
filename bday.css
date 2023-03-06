@@ -1,0 +1,88 @@
+body {
+  background-image: url("stars3.jpg");
+  border: 2px;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+.birthday-card {
+  position: relative;
+  width: 400px;
+  height: 595px;
+  border: 10px solid rgb(169, 168, 168);
+  margin: 60px auto 0 auto;
+  box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  filter:drop-shadow(2px 2px 4px rgba(0,0,0.5));
+  background-image: url("poopla.png"), linear-gradient(to bottom, rgba(245, 245, 245, 0), rgba(255, 255, 255, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.text {
+  width: 80%;
+  height: 80%;
+  margin-top: 350px;
+  margin-left:40px;
+  font-family: "Mynerve", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: center;
+  
+}
+
+.outer-cover {
+  position: absolute;
+  width: 400px;
+  height: 595px;
+  margin: -10px 0 0 -10px;
+  border: 10px solid rgb(169, 168, 168);
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transition: all 0.8s ease-in-out;
+  transform: perspective(800px) rotateY(0deg);
+  backface-visibility: hidden;
+  background-image: url("catto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:drop-shadow(2px 2px 4px rgba(0,0,0.5));
+  box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+ 
+}
+
+.cover-inner {
+  background-image: url("Monochromatic\ Leaves\ Illustration\ Landscape\ Note\ Card.png");
+  position: absolute;
+  width: 400px;
+  height: 595px;
+  margin: -10px 0px 0px -10px;
+  border: 10px solid rgb(169, 168, 168);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  backface-visibility: visible;
+  filter:drop-shadow(2px 2px 4px rgba(0,0,0.5));
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transition: all 0.8s ease-in-out;
+  transform: perspective(800px) rotateY(0deg);
+  overflow: hidden;
+ 
+}
+
+.birthday-card:hover .outer-cover{
+  transform: perspective(800px) rotateY(-170deg);
+}
+.birthday-card:hover .cover-inner{
+  transform: perspective(800px) rotateY(-170deg);
+}
+
+
